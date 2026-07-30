@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="newStyles.css">
+       
+     
+   
+   
+  </head>
+  
+  
+  
+  
+  
+  <body> 
+     <div class="whole_Site_Container">   
+     
+     
+     
+              <div id="topbar">    
+              
+                                    <ul>
+                                       <li><img src="images/New_titleimage.png" width="373" height="100" alt="" title="" /></li>
+                                           
+                                         
+                                              <li class="Dropdown_menu" role="menu">
+                                                          <input id="Button_menu" type="checkbox">
+                                                          <label for="Button_menu" tabindex="0"  >
+                                                          <img src="images/Menu_icon.png" width="80" height="80" alt="Open Menu" title="" />
+                                                          </label>
+                                                       
+                                                  <ul class="submenu">
+                                                    <li><a href="about.html"><img src="images/About_us_icon.png"  alt="About Page"<span>AboutMe </span></a> </li>
+                                                    <li><a href="indext.html"><img src="images/Main_Content_icon.png"alt="Main Page"<span>MainContent</span</a></li>
+                                                    <li><a href="contact.html"><img src="images/Contact_icon.png"  alt="Contact Page"<span>Contact</span></a></li>
+                                                  </ul>                                         
+                                                  
+                                                
+                                        
+                                                                        
+                                                   </li>
+                                          </li>
+                                  </ul>  
+               
+          </div>
+                                                                                                                                        
+      
+       <div id="section1"> </div> 
+  
+       
+       
+       <div class="middle_content_area">   
+            
+        
+              
+                      
+                     <h1>Uncharted Creativity:The<br> Adventure Begins Here.<h1>
+                   <h3>  Glimpse Into Nora Stewart’s Illustrated Explorations.</h3>
+                  
+                 
+              <div class="top_middle_content">
+                            
+              
+              
+              
+              
+              
+              
+              
+    <div class="slideshow">
+
+        <a href="Errorpage.html">
+            <img class="slide active" src="images/slide1.JPG" alt="Illustration 1">
+            <img class="slide" src="images/slide3.JPG" alt="Illustration 2">
+            <img class="slide" src="images/slide4.PNG" alt="Illustration 3">
+        </a>
+
+       
+
+    </div>
+
+</div>
+              
+              
+  
+             
+                   
+                                                   
+                                                   
+                                         <h2>Every project is a gem<br> waiting to be rediscovered.</h2> 
+                                         <h3>Venture below into an wondeful landscape of imagination.<h3>        
+                                                   
+                                                   
+                                        <div id="bottom_middle_content"> 
+                                                   
+                                                   
+                                                   
+                                                        <section>
+                                                            
+                                                             <a href="inner.html"><img src="images/mike.jpg" width="150" height="200" alt="" title="" /></a>
+                                                            <h3 tabindex="0" >Shredd'n While Sledd'n </h3>
+                                                            <p  tabindex="0" >Article by Berwis Fessoni</p>
+                                                      </section>
+                                                   
+                                                   
+                                                   
+                                                   
+                                                   
+                                                   
+                                                    <section>
+                                                            
+                                                             <a href="inner.html"><img src="images/blackpark.jpg" alt="photo of Skatepark"/></a>
+                                                            <h3 tabindex="0" >Shredd'n While Sledd'n </h3>
+                                                            <p  tabindex="0" >Article by Berwis Fessoni</p>
+                                                </section> 
+                                        
+                                        
+                                        </div>          
+                              
+                              
+     
+     
+     
+      </div>
+                     
+                     
+                                    
+                     
+                     
+                       
+                     
+       
+       
+       
+
+       
+       
+       
+       
+       
+       <div id="section3"> </div> 
+                      
+       
+       
+       
+       <footer role="navi">
+       
+               <ul>
+                    <li><a href="about.html"><img src="images/About_us_icon.png" width="80" height="80" alt="About Page" title="" /></a></li>
+                    
+                    
+                    <li>
+                    
+                    
+                   <a href="indext.html"><img src="images/Main_Content_icon.png"width="80" height="80" alt="Main Page" title="" /></a> 
+                    
+                    
+                    
+                    </li> 
+                    
+                    
+                     <li><a href="contact.html"> <img src="images/Contact_icon.png" width="80" height="80" alt="Contact Page" title="" /></a></li>
+                                    </ul>
+                                  
+       
+       
+       </footer>
+          </div>
+         
+       
+    <script>
+const slides = document.querySelectorAll(".top_middle_content .slide");
+let current = 0;
+
+setInterval(function () {
+
+    slides[current].classList.remove("active");
+
+    current = (current + 1) % slides.length;
+
+    slides[current].classList.add("active");
+
+}, 3000);
+</script>
+  </body>
+</html>

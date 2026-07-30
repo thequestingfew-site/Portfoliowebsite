@@ -1,0 +1,391 @@
+
+/*whole site class_selector_container*/
+.whole_Site_Container{ 
+    display:grid;
+    height:100vh;
+	grid-template-columns:.8fr 4fr .8fr;
+    grid-template-rows: .2fr 10fr .2fr;
+	grid-template-areas:
+	"topbar topbar topbar"
+	"section1 middle_content_area section3"
+	"footer footer footer";
+	
+	
+ }
+ 
+ 
+ 
+ /* hide checkbox */
+#Button_menu {
+  position: absolute;
+  opacity: 0;
+  focus:
+  }
+ 
+ button:focus {
+  outline: 3px solid blue; /* Adds a visible indicator */
+  background-color: #f0f0f0;
+}
+ 
+ 
+.submenu {
+
+  display: none !important;
+  list-style: none;
+
+  position: absolute;
+  background: white;
+  z-index: 999;
+  
+ border-top-left-radius:8px;
+  border-top-right-radius:8px;
+   border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
+
+  
+}
+
+
+
+
+}
+
+#Button_menu:checked ~ .submenu {
+  display: block !important;
+  }
+ 
+
+  
+  
+  
+
+
+ 
+ 
+
+
+
+
+.submenu li{ 
+
+padding-top:10px;
+padding-bottom:20px;
+padding-right: 9px;
+text-align: center;
+
+ }
+ 
+ .submenu li a{
+color:black;
+ text-align: center;
+ text-decoration:none;
+  }
+
+ 
+
+ 
+ 
+
+ 
+  
+  .logo img{
+  
+  display:inline-block;
+  
+   }
+
+  
+	
+	
+ #section1{ 
+ 
+
+grid-area: section1; 
+		   background-image: url('images/bg_left.png');
+           background-repeat: repeat;
+           background-position: center; /* Centers the image */
+           background-size: cover;     /* Scales the image to cover the entire container */
+           /* Ensure the container has a defined height */
+          /* Example: 100% of the viewport height */
+        
+
+
+
+ }	
+	
+	
+ #section3{ 
+
+ grid-area: section3;
+  background-image: url('images/bg_right.png');
+           background-repeat: repeat;
+           background-position: center; /* Centers the image */
+           background-size: cover;     /* Scales the image to cover the entire container */
+         
+           
+          
+ 
+ 
+}
+
+ 
+ 
+ /* id_Selected_containers_Styles */
+ #topbar{ 
+   background:#feeb47;
+   grid-area:topbar;
+   width:100%;
+   border-top-left-radius:8px;
+  border-top-right-radius:8px;
+   
+ }
+ /*middle content Class selector containter*/
+ .middle_content_area{ 
+ 
+ background:#bffffe;
+ grid-area: middle_content_area;
+ text-align: center;
+ 
+ }
+ 
+
+
+ 
+ 
+ .top_middle_content  {
+  position: relative; /* Establishes the positioning context */
+  display: inline-block; /* Helps contain the image correctly / no line brake before or after */
+ 
+ 
+}
+
+
+
+
+.top_middle_content img{ 
+width: 500px;
+
+
+
+
+
+  
+}
+
+.overlay-text {
+  position: absolute; /* Positions the text relative to its container */
+  top: 32%; /* Starts the top edge at half the container's height */
+  left: 50%; /* Starts the left edge at half the container's width */
+  transform: translate(-50%, -50%); /* Centers the text perfectly */
+  color: white; /* Ensures text is visible on a dark image */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  padding: 10px 20px;
+  text-align: center;
+  
+  /* Choose how the image fits within the defined space: */
+  object-fit: contain; 
+ 
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  #bottom_middle_content{
+ padding-top:20px;
+ 
+ 
+ 
+  }
+  
+  
+  
+  
+  
+  
+  
+ 
+  /*Rounding bottom middle images*/  
+ #bottom_middle_content img{
+ 
+ 
+ 
+  border-top-left-radius:80px;
+  border-top-right-radius:80px;
+   border-bottom-left-radius:80px;
+  border-bottom-right-radius:80px;
+  }
+ 
+ 
+ 
+ 
+#face img{
+
+border-radius: 69%
+
+ }
+ 
+ 
+#section1{ 
+ 
+background:#4526b5;
+grid-area: section1; 
+		   background-image: url('images/bg_left.png');
+           background-repeat: repeat;
+           background-position: center; /* Centers the image */
+           background-size: cover;     /* Scales the image to cover the entire container */
+           /* Ensure the container has a defined height */
+           width: 100%;
+
+
+
+ }
+ 
+ 
+ 
+ #section3{ 
+ background:#b52670;
+ grid-area: section3;
+  background-image: url('images/bg_right.png');
+           background-repeat: repeat;
+           background-position: center; /* Centers the image */
+           background-size: cover;     /* Scales the image to cover the entire container */
+         
+           
+           width: 100%;
+
+
+ 
+ 
+ 
+ 
+ 
+ }
+ /* footer_Tag_styles */
+ footer{
+ 
+ background:#fcba03;
+ grid-area:footer;
+ 
+   border-bottom-left-radius:8px;
+  border-bottom-right-radius:8px;
+ 
+   }
+ 
+ 
+ 
+ /*topbar_ list_styles*/
+
+#topbar {
+
+
+
+
+ }
+
+
+ #topbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding:20px;
+
+  
+}
+
+#topbar li {
+  margin: 0 .5px;
+
+  position: relative;
+
+}  
+
+
+#topbar img {
+ 		max-inline-size:100%;
+  }
+  
+  
+  
+  /*footer_list styles*/
+  
+ footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;}
+  
+  footer li {
+
+  margin: 0 10px;}
+  
+  footer img {
+ 		max-inline-size:100%;
+		}
+  
+
+  
+  
+  /*@Media Queries*/
+  
+  
+ @media  (max-width: 767px ) {
+
+
+#topbar {
+
+
+height:90px;
+
+
+
+} 
+ 
+ 
+ 
+ .top_middle_content img{ 
+
+width: 400px;
+ }
+ 
+ 
+ 
+ 
+ #topbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding:2px;
+
+  
+}
+
+#topbar img{
+ 
+
+height:60px;
+
+
+ }
+  
+  
+.submenu{
+
+
+width:200px;
+ position: absolute; /* Positions the text relative to its container */
+  top: 120%; /* Starts the top edge at half the container's height */
+  right: 60%; 
+
+
+ }
+ 
+}
+ 
+ 
+ 
+	
+
+  

@@ -1,0 +1,121 @@
+
+/*whole site class_selector_container*/
+.whole_Site_Container{ 
+    display:grid;
+    height:100vh;
+	grid-template-columns:.8fr 4fr .8fr;
+    grid-template-rows: 6fr 14fr 6fr;
+	grid-template-areas:
+	"topbar topbar topbar"
+	"section1 middle_content_area section3"
+	"footer footer footer";
+	
+	
+ }
+ 
+ 
+ /* id_Selected_containers_Styles */
+ #topbar{ 
+   background:#feeb47;
+   grid-area:topbar;
+   width:100%;
+   border-top-left-radius:8px;
+  border-top-right-radius:8px;
+   
+ }
+ 
+ #middle_content_area{ 
+ 
+ background:#26b5a7;
+ grid-area: middle_content_area;
+ 
+ }
+ 
+ 
+ 
+ #section1{ 
+ 
+background:#4526b5;
+grid-area: section1; 
+		   background-image: url('images/bg_left.png');
+           background-repeat: no-repeat;
+           background-position: center; /* Centers the image */
+           background-size: cover;     /* Scales the image to cover the entire container */
+           /* Ensure the container has a defined height */
+           height: 100vh; /* Example: 100% of the viewport height */
+           width: 100%;
+
+
+
+ }
+ 
+ 
+ 
+ #section3{ 
+ background:#b52670;
+ grid-area: section3;
+  background-image: url('images/bg_right.png');
+           background-repeat: no-repeat;
+           background-position: center; /* Centers the image */
+           background-size: cover;     /* Scales the image to cover the entire container */
+           /* Ensure the container has a defined height */
+           height: 100vh; /* Example: 100% of the viewport height */
+           width: 100%;
+
+
+ 
+ 
+ 
+ 
+ 
+ }
+ /* footer_Tag_styles */
+ footer{
+ 
+ background:#fcba03;
+ grid-area:footer;
+ 
+ 
+ 
+   }
+ 
+ 
+ 
+ /*topbar_ list_styles*/
+ #topbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding:20px;
+
+  
+}
+
+#topbar li {
+  margin: 0 .5px;
+  
+}
+
+#topbar img {
+ 		max-inline-size:100%;
+  }
+  
+  
+  
+  /*footer_list styles*/
+  
+ footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;}
+  
+  footer li {
+
+  margin: 0 10px;}
+  
+  footer img {
+ 		max-inline-size:100%;
+  }
+
+  
+  

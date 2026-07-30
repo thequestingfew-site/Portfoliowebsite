@@ -1,0 +1,576 @@
+
+/*whole site class_selector_container*/
+.whole_Site_Container{ 
+    display:grid;
+    height:100vh;
+	grid-template-columns:.8fr 4fr .8fr;
+    grid-template-rows: .2fr 10fr .2fr;
+	grid-template-areas:
+	"topbar topbar topbar"
+	"section1 middle_content_area section3"
+	"footer footer footer";
+	
+	
+ }
+ 
+ /*slide show*/
+ 
+.slideshow {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid transparent;
+    border-radius: 30px;
+}
+
+.slideshow:hover {
+    border: 5px solid red
+
+
+}
+
+
+
+
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+	 border-radius: 30px; 
+
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+	
+	}
+
+
+
+
+.slide.active {
+    opacity: 1;
+	
+	
+}
+ 
+ 
+ 
+ .top_middle_content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 320px; /* 300px slideshow + 20px spacing */
+}
+ 
+ 
+
+
+
+
+
+.top_middle_content a {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+
+ 
+ 
+ 
+ 
+ /* changes focus color*/
+ :focus {
+  outline: 3px solid #eb4034;
+  outline-offset: 3px;
+}
+ 
+ /* hide checkbox */
+#Button_menu {
+  position: absolute;
+  opacity: 0;
+  
+  
+  }
+ 
+ 
+.submenu {
+
+  display: none !important;
+  list-style: none;
+
+  position: absolute;
+  background: white;
+  z-index: 999;
+  /* Positions the text relative to its container */
+  top: 120%; /* Starts the top edge at half the container's height */
+   left: 120%; 
+   width:80px;
+  
+ border-top-left-radius:8px;
+  border-top-right-radius:8px;
+   border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
+
+  
+}
+
+
+
+
+#Button_menu:checked ~ .submenu {
+  display: block !important;
+  }
+
+
+
+
+
+.submenu li{ 
+
+padding-top:10px;
+padding-bottom:20px;
+padding-right: 9px;
+text-align: center;
+ justify-content: center;
+}
+ 
+ .submenu li a{
+color:black;
+ text-align: center;
+ text-decoration:none;
+ }
+  
+  
+ label img:hover {
+ 
+    background-color: red;
+   padding: 5px;
+ 
+ 
+  }
+  
+  
+  
+ /*changes bg color for submenu*/ 
+  .submenu li a:hover {
+   background-color: red;
+  border-color:red;2px;
+  }
+  
+  
+  
+  
+  
+  
+  
+
+ 
+
+/*"Responsive Sizing Image_Class selector*/ 
+.img_respond {
+   width:100%;
+   height:auto;
+
+
+ }
+ 
+ 
+
+ 
+  
+  .logo img{
+  
+  display:inline-block;
+  
+   }
+  
+ 
+ 
+ 
+ 
+ 
+ #main_text_about{
+ 
+ padding:15px;
+ 
+ 
+ 
+  }
+  
+  #main_text_about p{
+ 
+font-size:20px;
+ 
+ 
+ 
+  }
+  
+  
+  
+  
+ 
+
+   
+ #bottom_middle_content img{
+ 
+ 
+ 
+  border-top-left-radius:80px;
+  border-top-right-radius:80px;
+   border-bottom-left-radius:80px;
+  border-bottom-right-radius:80px;
+ 
+ 
+ 
+ 
+  }
+   
+
+
+
+ #bottom_middle_content img:hover{
+ 
+   background-color: red;
+   padding: 5px;
+ 
+ 
+ 
+ 
+ 
+ 
+  }
+
+
+
+
+
+
+  
+  
+
+ 
+#face img{
+
+border-radius: 90%;
+
+ }
+	
+	
+ #section1{ 
+ 
+
+grid-area: section1; 
+		   background-image: url('images/bg_left.png');
+
+           background-position: center; /* Centers the image */
+           background-size: cover;     /* Scales the image to cover the entire container */
+           /* Ensure the container has a defined height */
+          /* Example: 100% of the viewport height */
+        
+
+
+
+ }	
+	
+	
+ #section3{ 
+
+ grid-area: section3;
+  background-image: url('images/bg_right.png');
+           background-repeat: repeat;
+           background-position: center; /* Centers the image */
+           background-size: cover;     /* Scales the image to cover the entire container */
+         
+           
+          
+ 
+ 
+}
+
+ 
+ 
+ /* id_Selected_containers_Styles */
+ #topbar{ 
+   background:#feeb47;
+   grid-area:topbar;
+   width:100%;
+   border-top-left-radius:8px;
+  border-top-right-radius:8px;
+   
+ }
+ /*middle content Class selector containter*/
+ .middle_content_area{ 
+ padding-bottom:20px;
+ background:#bffffe;
+ grid-area: middle_content_area;
+ text-align: center;
+ 
+ }
+ 
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+  
+
+ 
+ 
+
+ 
+ 
+ 
+  }
+
+
+.top_middle_content a:hover {
+    background-color: transparent;
+    padding: 0;
+	
+	}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+.middle_content_area{
+
+
+padding-top:70px;
+
+
+
+
+ }
+
+.overlay-text {
+  position: absolute; /* Positions the text relative to its container */
+  top: 12%; /* Starts the top edge at half the container's height */
+  left: 50%; /* Starts the left edge at half the container's width */
+  transform: translate(-50%, -50%); /* Centers the text perfectly */
+  color: white; /* Ensures text is visible on a dark image */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  padding: 10px 20px;
+  text-align: center;
+  
+  /* Choose how the image fits within the defined space(container) donot exceedfile save all n : */
+  object-fit: contain; 
+ 
+  }
+  
+  
+  
+  
+  
+  
+  
+ #bottom_middle_content{
+ padding-top:20px;
+ 
+ 
+ 
+  }
+ 
+ 
+ 
+ #section1{ 
+ 
+background:#4526b5;
+grid-area: section1; 
+		   background-image: url('images/bg_left.png');
+           background-repeat: repeat;
+           background-position: center; /* Centers the image */
+           background-size: cover;     /* Scales the image to cover the entire container */
+           /* Ensure the container has a defined height */
+           width: 100%;
+
+
+
+ }
+ 
+ 
+ 
+ #section3{ 
+ background:#b52670;
+ grid-area: section3;
+  background-image: url('images/bg_right.png');
+           background-repeat: repeat;
+           background-position: center; /* Centers the image */
+           background-size: cover;     /* Scales the image to cover the entire container */
+         
+           
+           width: 100%;
+
+
+
+}
+
+ 
+
+ 
+ 
+ 
+ 
+ /* footer_Tag_styles */
+ footer{
+ 
+ background:#fcba03;
+ grid-area:footer;
+ 
+   border-bottom-left-radius:8px;
+  border-bottom-right-radius:8px;
+ 
+   }
+   
+ footer a:hover{
+   background-color: red;
+   padding: 10px;
+ 
+ 
+  }  
+   
+ 
+ 
+ 
+ /*topbar_ list_styles*/
+
+#topbar {
+
+
+
+
+ }
+
+
+ #topbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding:20px;
+
+  
+}
+
+#topbar li {
+  margin: 0 .5px;
+
+  position: relative;
+
+}  
+
+
+#topbar img {
+ 		max-inline-size:100%;
+  }
+  
+  
+  
+  /*footer_list styles*/
+  
+ footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;}
+  
+  footer li {
+
+  margin: 0 10px;}
+  
+  footer img {
+ 		max-inline-size:100%;
+		}
+  
+
+  
+  
+  /*@Media Queries*/
+  
+  
+ @media  (max-width: 767px ) {
+
+
+#topbar{
+
+
+height:90px;
+
+
+
+} 
+ 
+ 
+ 
+ .top_middle_content img{ 
+
+width: 300px;
+ }
+ 
+ 
+ 
+ 
+ #topbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding:2px;
+
+  
+}
+
+#topbar img{
+ 
+
+height:60px;
+
+
+ }
+  
+  
+.submenu{
+
+
+width:200px;
+ position: absolute; /* Positions the text relative to its container */
+  top: 120%; /* Starts the top edge at half the container's height */
+  right: 69%; 
+ left: -190%; 
+
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+	
+
+  
