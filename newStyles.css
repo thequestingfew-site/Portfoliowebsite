@@ -1,5 +1,15 @@
-
 /*whole site class_selector_container*/
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
 .whole_Site_Container{ 
     display:grid;
     height:100vh;
@@ -30,6 +40,11 @@
 
 }
 
+.slideshow a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 
 
 
@@ -82,7 +97,10 @@
     height: 300px;
 }
 
- 
+#bottom_middle_content table {
+    margin-left: auto;
+    margin-right: auto;
+}
  
  
  
@@ -527,7 +545,7 @@ height:90px;
  
  .top_middle_content img{ 
 
-width: 300px;
+width: 100%;
  }
  
  
@@ -562,6 +580,19 @@ width:200px;
 
  }
  
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+	
+
+  
+
  
  
  
