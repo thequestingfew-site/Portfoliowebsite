@@ -1,3 +1,4 @@
+
 /*whole site class_selector_container*/
 
 
@@ -97,12 +98,6 @@ body {
     height: 300px;
 }
 
-#bottom_middle_content table {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
 
 
 #bottom_middle_content{
@@ -114,7 +109,24 @@ padding-right:10px;
 
  }
 
- 
+#bottom_middle_content table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.aboutName p img{
+
+float:right;
+
+
+
+}
+
+
+
+
+
  
  /* changes focus color*/
  :focus {
@@ -548,8 +560,19 @@ grid-area: section1;
 
 
 height:90px;
+}
+
+.whole_Site_Container{
+overflow-x:hidden;
 
 
+
+ }
+
+
+
+
+ 
 
 } 
  
@@ -584,13 +607,27 @@ height:60px;
 .submenu{
 
 
-width:200px;
- position: absolute; /* Positions the text relative to its container */
+   width:200px;
+  position: absolute; /* Positions the text relative to its container */
   top: 120%; /* Starts the top edge at half the container's height */
   right: 69%; 
- left: -190%; 
+  left: -190%; 
 
  }
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+	
+
+  
+
  
  
  
