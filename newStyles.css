@@ -585,7 +585,7 @@ grid-area: section1;
 
   
   
-  /*@Media Queries*/
+ /*@Media Queries*/
   
   
  @media  (max-width: 767px ) {
@@ -604,12 +604,16 @@ overflow-x:hidden;
 
  }
 
+  #bottom_middle_content table img {
+        width: 130px;
+        height: auto;
+    }
 
 
 
  
 
-} 
+
  
  
  
@@ -658,3 +662,4 @@ height:60px;
   100%{transform: translate(100%,0); }
   
   }
+ 
