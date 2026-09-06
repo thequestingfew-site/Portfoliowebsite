@@ -24,6 +24,40 @@ body {
 	
  }
  
+ .marquee {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+    overflow: hidden;
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee-track h2 {
+    margin: 0;
+    padding-right: 50px;
+    white-space: nowrap;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+  
+  
+  
+ 
  /*slide show*/
  
 .slideshow {
@@ -401,7 +435,7 @@ grid-area: section1;
 
 
 .middle_content_area{
-
+ min-width: 0;
 
 padding-top:70px;
 
@@ -616,41 +650,10 @@ height:60px;
  }
  
  
- 
- 
- 
- 
-
- 
- 
- 
-	
-
+   @keyframes animetext{
   
-
- 
- 
- 
- 
- 
- 
-
- 
- 
- 
-	
-
   
-
- 
- 
- 
- 
- 
-
- 
- 
- 
-	
-
+  0% {transform: translate(0,0); }
+  100%{transform: translate(100%,0); }
   
+  }
