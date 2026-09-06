@@ -33,7 +33,8 @@ body {
 }
 
 .marquee-track {
-    display: flex;
+ padding-top: 20px;
+	display: flex;
     width: max-content;
     animation: marquee 15s linear infinite;
 }
